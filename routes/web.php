@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 route::get('login', [LoginController::class,'loginPage'])->name('login');
+route::get('registrasi', [LoginController::class,'registrasi'])->name('registrasi');
+route::post('postRegistrasi', [LoginController::class,'postRegistrasi'])->name('postRegistrasi');

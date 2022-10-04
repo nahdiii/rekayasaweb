@@ -12110,9 +12110,10 @@ a:focus {
 }
 
 .bg-register-image {
-    background: url(https://source.unsplash.com/Mv9hjnEUHR4/600x800);
+    background: url(https://umbjm.ac.id/wp-content/uploads/2018/08/logo-19-12-tanpa-bayang--e1535530444256.png);
     background-position: center;
-    background-size: cover
+    background-size: cover;
+    height: 460px;
 }
 
 .bg-password-image {
