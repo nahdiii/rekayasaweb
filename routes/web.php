@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PenggunaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,8 @@ Route::get('/', function () {
 route::get('login', [LoginController::class,'loginPage'])->name('login');
 route::get('registrasi', [LoginController::class,'registrasi'])->name('registrasi');
 route::post('postRegistrasi', [LoginController::class,'postRegistrasi'])->name('postRegistrasi');
+
+route::get('data-pengguna', [PenggunaController::class,'index'])->name('data-pengguna');
+route::get('hapus-pengguna/{id}', [PenggunaController::class,'destroy'])->name('hapus-pengguna');
+route::get('ubah-pengguna/{id}', [PenggunaController::class,'edit'])->name('ubah-pengguna');
+route::post('simpan-ubah-pengguna/{id}', [PenggunaController::class,'update'])->name('simpan-ubah-pengguna');
